@@ -16,6 +16,7 @@
 import extractYamlFrontmatter from '@common/util/extract-yaml-frontmatter'
 import ZettlrCommand from './zettlr-command'
 import type { MDFileDescriptor } from '@dts/common/fsal'
+import { yaml } from '@codemirror/lang-yaml'
 
 const MAX_FILE_PREVIEW_LENGTH = 300
 const MAX_FILE_PREVIEW_LINES = 10
@@ -62,9 +63,11 @@ export default class FilePathFindMetaData extends ZettlrCommand {
       }
       i++
     }
+    let previewTitle = descriptor.yamlTitle
+    if (previewTitle === undefined && descriptor.firstHeading == null) previewTitle = descriptor.name
 
     return [
-      descriptor.name,
+      previewTitle,
       preview,
       descriptor.wordCount,
       descriptor.modtime
