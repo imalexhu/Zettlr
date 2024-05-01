@@ -1,8 +1,3 @@
-##
-Previously when displaying files. Zettlr has displayed the preview with the 
-filename. This change was made so that instead of the filename being displayed
-it is now the yamlTitle or the firstHeading. This should make the preview more
-descriptive compared to before
 
 
 # Upcoming

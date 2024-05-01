@@ -43,6 +43,18 @@ export default class FilePathFindMetaData extends ZettlrCommand {
    * @return  {MDFileDescriptor|undefined|string[]} Returns a MetaDescriptor, undefined, or an array
    */
 
+  // Given the user's configs, return file preview with the appropriate file title
+  previewTitleGenerator (descriptor: MDFileDescriptor): string {
+    const userConfig = this._app.config.get().fileNameDisplay
+    if (userConfig === 'filename') return descriptor.name
+    else if (userConfig === 'heading' && descriptor.firstHeading !== null) return descriptor.firstHeading
+    else if (userConfig === 'title' && descriptor.yamlTitle !== undefined) return descriptor.yamlTitle
+    else if (userConfig === 'title+heading' && descriptor.firstHeading !== null && descriptor.yamlTitle !== undefined) {
+      return `${descriptor.yamlTitle} ${descriptor.firstHeading}`
+    }
+    return descriptor.name
+  }
+
   async run (evt: string, arg: any): Promise<MDFileDescriptor|undefined|any[]> {
     // Quick'n'dirty command to return the Meta descriptor for the given query
     const descriptor = this._app.workspaces.findExact(arg)
