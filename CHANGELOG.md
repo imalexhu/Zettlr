@@ -361,7 +361,11 @@ can always override the language on a per-document basis using the status bar.
 
 - Version updates:
   - Pandoc: `3.1.13`
+<<<<<<< HEAD
   - Electron: `30.0.2`
+=======
+  - Electron: `30.0.1`
+>>>>>>> d3e4cce99 (chore: Bump Electron to v30.0.1)
 - Switched from the `vue-recommended` to the `vue3-recommended` ESLint ruleset
 - Removed the config option `sortingTime` since that can be inferred from the
   option `fileMetaTime`

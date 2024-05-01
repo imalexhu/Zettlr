@@ -5654,16 +5654,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "electron@npm:29.x.x":
   version: 29.3.2
   resolution: "electron@npm:29.3.2"
+=======
+"electron@npm:^30.0.1":
+  version: 30.0.1
+  resolution: "electron@npm:30.0.1"
+>>>>>>> d3e4cce99 (chore: Bump Electron to v30.0.1)
   dependencies:
     "@electron/get": ^2.0.0
     "@types/node": ^20.9.0
     extract-zip: ^2.0.1
   bin:
     electron: cli.js
+<<<<<<< HEAD
   checksum: a5daa006a975304e67518ad430236ad1dc8b77ba2ea22171a8bfe019ca490c937b1d6f06e5a15abcf31cbe2694f1a3480f7962a35a30aa764360776adec878ca
+=======
+  checksum: 3e2c587eaf74e54523db314effb6558cdbb0bc71e40bb2d1f090cbe2051ded59ee74519100e184f6a88e45dd87f14c28610cd94a25518a24513f2ca5e876eaef
+>>>>>>> d3e4cce99 (chore: Bump Electron to v30.0.1)
   languageName: node
   linkType: hard
 
@@ -14675,6 +14685,7 @@ __metadata:
     "@codemirror/legacy-modes": ^6.4.0
     "@codemirror/search": ^6.5.6
     "@codemirror/state": ^6.4.1
+<<<<<<< HEAD
     "@codemirror/view": ^6.26.1
     "@electron-forge/cli": ^7.3.1
     "@electron-forge/maker-deb": ^7.3.1
@@ -14682,6 +14693,15 @@ __metadata:
     "@electron-forge/maker-zip": ^7.3.1
     "@electron-forge/plugin-fuses": ^7.3.1
     "@electron-forge/plugin-webpack": ^7.3.1
+=======
+    "@codemirror/view": ^6.26.3
+    "@electron-forge/cli": ^7.4.0
+    "@electron-forge/maker-deb": ^7.4.0
+    "@electron-forge/maker-rpm": ^7.4.0
+    "@electron-forge/maker-zip": ^7.4.0
+    "@electron-forge/plugin-fuses": ^7.4.0
+    "@electron-forge/plugin-webpack": ^7.4.0
+>>>>>>> d3e4cce99 (chore: Bump Electron to v30.0.1)
     "@electron/fuses": ^1.8.0
     "@electron/notarize": ^2.3.0
     "@lezer/common": ^1.2.1
@@ -14720,7 +14740,11 @@ __metadata:
     css-loader: ^7.1.1
     csso: ^5.0.5
     d3: ^7.9.0
+<<<<<<< HEAD
     electron: 29.x.x
+=======
+    electron: ^30.0.1
+>>>>>>> d3e4cce99 (chore: Bump Electron to v30.0.1)
     electron-builder: ^24.13.3
     electron-devtools-assembler: ^1.2.0
     eslint: ^8.x.x
