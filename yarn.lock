@@ -10024,6 +10024,7 @@ __metadata:
   linkType: hard
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "minimatch@npm:^9.0.4":
   version: 9.0.4
@@ -10035,6 +10036,8 @@ __metadata:
   linkType: hard
 
 >>>>>>> 9becb2ab8 (chore: Upgrade ESLint and fix new linter errors)
+=======
+>>>>>>> ac2bb03d2 (chore: Bump eslint dependencies)
 "minimist@npm:^1.2.0, minimist@npm:^1.2.6":
   version: 1.2.7
   resolution: "minimist@npm:1.2.7"
