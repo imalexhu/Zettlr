@@ -14675,13 +14675,13 @@ __metadata:
     "@codemirror/legacy-modes": ^6.4.0
     "@codemirror/search": ^6.5.6
     "@codemirror/state": ^6.4.1
-    "@codemirror/view": ^6.26.3
-    "@electron-forge/cli": ^7.4.0
-    "@electron-forge/maker-deb": ^7.4.0
-    "@electron-forge/maker-rpm": ^7.4.0
-    "@electron-forge/maker-zip": ^7.4.0
-    "@electron-forge/plugin-fuses": ^7.4.0
-    "@electron-forge/plugin-webpack": ^7.4.0
+    "@codemirror/view": ^6.26.1
+    "@electron-forge/cli": ^7.3.1
+    "@electron-forge/maker-deb": ^7.3.1
+    "@electron-forge/maker-rpm": ^7.3.1
+    "@electron-forge/maker-zip": ^7.3.1
+    "@electron-forge/plugin-fuses": ^7.3.1
+    "@electron-forge/plugin-webpack": ^7.3.1
     "@electron/fuses": ^1.8.0
     "@electron/notarize": ^2.3.0
     "@lezer/common": ^1.2.1
