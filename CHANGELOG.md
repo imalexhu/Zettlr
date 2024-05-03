@@ -2,6 +2,15 @@
 
 ## 
 * fix: The file preview tooltip now respects the filename display settings
+## GUI and Functionality
+
+(nothing here)
+
+## Under the Hood
+
+(nothing here)
+
+# 3.1.0
 
 ## Changes to the link detection
 
