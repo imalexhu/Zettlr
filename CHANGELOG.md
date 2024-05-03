@@ -106,6 +106,7 @@ follow these links again.
 
 Note that we have not implemented other parts yet, and we recommend the more
 common `[[wikilinks]]` or `[regular markdown links](./file.md)`.
+<<<<<<< HEAD
 
 ## Preferences Window Overhaul
 
@@ -125,6 +126,8 @@ that a bit of older remnants are now gone. Overall, the experience of changing
 the settings should now be much smoother, and we hope you like the change. In
 the coming updates, you can improve many more improvements on the UX side of
 things!
+=======
+>>>>>>> 19a0e8ff4 (chore: Clean up CHANGELOG, Electron to 30.0.2)
 
 ## Project Overhaul: Full Control Over Your Files
 
@@ -362,10 +365,14 @@ can always override the language on a per-document basis using the status bar.
 - Version updates:
   - Pandoc: `3.1.13`
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Electron: `30.0.2`
 =======
   - Electron: `30.0.1`
 >>>>>>> d3e4cce99 (chore: Bump Electron to v30.0.1)
+=======
+  - Electron: `30.0.2`
+>>>>>>> 19a0e8ff4 (chore: Clean up CHANGELOG, Electron to 30.0.2)
 - Switched from the `vue-recommended` to the `vue3-recommended` ESLint ruleset
 - Removed the config option `sortingTime` since that can be inferred from the
   option `fileMetaTime`
