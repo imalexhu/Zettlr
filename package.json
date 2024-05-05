@@ -11,10 +11,14 @@
     "url": "git://github.com/Zettlr/Zettlr.git"
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "3.1.1",
 =======
   "version": "3.1.0",
 >>>>>>> 6ec71f9e5 (chore: Bump version to 3.1.0; update changelog)
+=======
+  "version": "3.1.1",
+>>>>>>> c72382007 (chore: Bump version to 3.1.1)
   "license": "GPL-3.0",
   "description": "Your One-Stop Publication Workbench",
   "main": ".webpack/main",
