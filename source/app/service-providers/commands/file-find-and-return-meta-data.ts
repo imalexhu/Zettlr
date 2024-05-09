@@ -20,6 +20,13 @@ import type { MDFileDescriptor } from '@dts/common/fsal'
 const MAX_FILE_PREVIEW_LENGTH = 300
 const MAX_FILE_PREVIEW_LINES = 10
 
+// Given the user's configs, return file preview with the appropriate file title
+function previewTitleGenerator (userConfig: string, descriptor: MDFileDescriptor): string {
+  if (userConfig.includes('heading') && descriptor.firstHeading !== null) return descriptor.firstHeading
+  else if (userConfig.includes('title')&& descriptor.yamlTitle !== undefined) return descriptor.yamlTitle
+  return descriptor.name
+}
+
 export default class FilePathFindMetaData extends ZettlrCommand {
   constructor (app: any) {
     super(app, [ 'find-exact', 'file-find-and-return-meta-data' ])
@@ -35,18 +42,6 @@ export default class FilePathFindMetaData extends ZettlrCommand {
    *
    * @return  {MDFileDescriptor|undefined|string[]} Returns a MetaDescriptor, undefined, or an array
    */
-
-  // Given the user's configs, return file preview with the appropriate file title
-  previewTitleGenerator (descriptor: MDFileDescriptor): string {
-    const userConfig = this._app.config.get().fileNameDisplay
-    if (userConfig === 'filename') return descriptor.name
-    else if (userConfig === 'heading' && descriptor.firstHeading !== null) return descriptor.firstHeading
-    else if (userConfig === 'title' && descriptor.yamlTitle !== undefined) return descriptor.yamlTitle
-    else if (userConfig === 'title+heading' && descriptor.firstHeading !== null && descriptor.yamlTitle !== undefined) {
-      return `${descriptor.yamlTitle} ${descriptor.firstHeading}`
-    }
-    return descriptor.name
-  }
 
   async run (evt: string, arg: any): Promise<MDFileDescriptor|undefined|any[]> {
     // Quick'n'dirty command to return the Meta descriptor for the given query
@@ -76,7 +71,7 @@ export default class FilePathFindMetaData extends ZettlrCommand {
       i++
     }
     return [
-      this.previewTitleGenerator(descriptor),
+      previewTitleGenerator(this._app.config.get().fileNameDisplay, descriptor),
       preview,
       descriptor.wordCount,
       descriptor.modtime

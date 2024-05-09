@@ -1,8 +1,7 @@
 # Upcoming
 
 ## 
-Changed the file preview display so that the title of the file is displayed is
-the same as the document name display configured by the user
+* fix: The file preview tooltip now respects the filename display settings
 
 ## Changes to the link detection
 
