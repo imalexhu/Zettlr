@@ -18,7 +18,7 @@ multiple queries.
 ## GUI and Functionality
 
 - **Change**: When searching for files in the filter field, only files and
-  workspaces that match all queries entered will be displayed.
+  workspaces that match all queries entered will be displayed
 
 # 3.1.1
 
