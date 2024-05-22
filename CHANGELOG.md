@@ -2,7 +2,6 @@
 
 # Upcoming
 
-## 
 * fix: The file preview tooltip now respects the filename display settings
 
 ## Changes to file filtering logic
